@@ -1,0 +1,5 @@
+// RUN -> broadcast, verify
+// forge script script/Vault.s.sol --rpc-url $RPC_URL --broadcast -vvv --verify --etherscan-api-key $API_KEY
+
+// DRY RUN -> no broadcast & verify
+// forge script script/Vault.s.sol --rpc-url $RPC_URL -vvv

@@ -1,17 +1,19 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
-import "openzeppelin-contracts/contracts/access/Ownable.sol";
+import {ERC20} from "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+import {Ownable} from "openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract BahlilToken is ERC20, Ownable {
-    uint256 public number;
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
+    constructor() ERC20("BahlilToken", "BAHLIL") Ownable(msg.sender) {}
+
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
     }
 
-    function increment() public {
-        number++;
+    function burn(address from, uint256 amount) public {
+        _burn(from, amount);
     }
+
 }
