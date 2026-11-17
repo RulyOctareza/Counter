@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/preview/hero.png" alt="Counter — ilustrasi proyek smart contract" width="100%">
+  <img src="assets/preview/hero.svg" alt="Counter — ilustrasi proyek smart contract" width="100%">
 </p>
 
 <h1 align="center">Counter — Foundry Playground</h1>
